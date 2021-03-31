@@ -1,12 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test GHPAGES</title>
-</head>
-<body>
-    <h1>Page publiée</h1>
-</body>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Lien Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- NAVIGATION -->
+        <header>
+            <nav>
+                <div id="entete">
+                    <span>Émilie-Laura Accipe</span>
+                    <span>DESIGN GRAPHIQUE</span>
+                    <span>& DÉVELOPPEMENT WEB</span>
+                </div>
+    
+                <div id="navIcon">
+    
+                    <div id="menuHamburger">
+                        <div class="barre b1"></div>
+                        <div class="barre b2"></div>
+                        <div class="barre b3"></div>
+                    </div>
+            
+                    <div id="menuTexte">
+                        <h3>MENU</h3>
+                    </div>
+            
+                </div>   
+            </nav>
+
+        </header>
+
+        <!-- MENU COULISSANT -->
+        <div id="containerMenu">
+
+            <div id="menu">
+                <a href="index.html" class="menuItem"> 
+                    <span class="item">ACCUEIL</span>
+                    <span class="label">Retour à l'accueil</span>
+                </a>
+
+                <a href="page.html" class="menuItem"> 
+                    <span class="item">PROJETS</span>
+                    <span class="label">Découvrir tous les projets</span>
+                </a>
+
+                <a href="page.html" class="menuItem"> 
+                    <span class="item">À&nbsp;PROPOS</span>
+                    <span class="label">En apprendre davantage<br>sur mon parcours</span>
+                </a>
+
+                <a href="contact.html" class="menuItem"> 
+                    <span class="item">CONTACT</span>
+                    <span class="label">Faisons connaissance<br>et parlez-moi de votre projet</span>
+                </a>
+
+            </div> 
+
+        </div>
+
+        <!-- SECTION ACCUEIL -->
+        <section class="bg accueil">
+            <div class="banniere">
+                <div id="slogan">
+                    <h1>Designer graphique, <br> développeuse web <br> créative et passionnée</h1>
+                    <h2>au service de projets <br> engagés et vertueux</h2>
+                </div>
+    
+                <div class="scroll">
+                    <span>scroll |</span>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- SECTION PRÉSENTATION COMPÉTENCES -->
+        <section class="bg">
+
+            <div id="containerPres">
+
+                <div class="carte c1">
+                    <h4>IDENTITÉ GRAPHIQUE</h4>
+                    <div class="curseur1">
+                        <p>Véritable ancrage visuel de votre entreprise auprès du public, je crée à vos côtés une identité qui a du sens, qui valorise vos valeurs, vos ambitions et vos produits.</p>
+                    </div>
+                </div>
+
+                <div class="carte c2">
+                    <h4>DÉVELOPPEMENT WEB</h4>
+                    <div class="curseur2">
+                        <p>Je vous accompagne également pour la conception et la réalisation de vos supports digitaux, qu'il s'agisse d'un site vitrine, d'un site e-commerce, d'un blog...</p>
+                    </div>
+                </div>
+                <div class="carte c3">
+                    <h4>MISE EN PAGE</h4>
+                    <div class="curseur3">
+                        <p>Je conçois vos différents supports imprimés (affiche, flyer, catalogue, plaquette, packaging...), toujours en parfait accord avec votre identité graphique.<br><br></p>
+                        <p>Le sens, la cohérence et l'harmonie de tous vos supports sont les trois clefs d'une identité réussie.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION PROJETS À LA UNE -->
+        <!-- <section class="bg">
+            
+            <div id="containerSlide">
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+
+        </section> -->
+
+        <!-- SECTION À PROPOS -->
+        <section class="bg">
+            
+            <div id="containerApropos">
+                <div id="intro">
+                    <h5>Hey ! Je suis <br>Émilie-Laura Accipe</h5>
+                    
+                    <p>designer graphique et développeuse web, passionnée par le dessin et les images. J'aime aussi écrire du beau code et finaliser des projets web au pixel prêt. Mon objectif est de vous faire gagner en crédibilité et en notoriété en sublimant les supports de communication de votre entreprise.<br>Vous aimez mon travail et souhaitez discuter de vos idées ? Écrivez-moi sans tarder.</p>
+
+                </div>
+
+                <div id="portrait">
+                        <img src="Portrait2.jpg" alt="portrait">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg">
+            <div>
+                Copyright 2021, tous droits réservés. Ce site a été designé et codé par Émilie-Laura Accipe.
+            </div>
+        </footer>
+
+
+
+
+        <!-- Lien GreenSock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+        <!-- Librairie Charming -->
+        <script src="charming.min.js"></script>
+
+        <!-- Lien perso JS -->
+        <script src="script.js"> </script>
+
+    </body>
 </html>

@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: #212B36;
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* SECTIONS */
+section {
+    height: 100%;
+    width: 100%;
+}
+
+.bg {
+    background-color: rgb(245, 245, 245);
+}
+
+
+/* NAVIGATION */
+header {
+    width: 100%;
+    /* height: 20%; */
+    background-color: rgb(245, 245, 245);
+    z-index: 100;
+    /* position: fixed; */
+}
+
+nav {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+}
+
+#entete{
+    display: grid;
+}
+
+#entete span:nth-child(1) {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px ;
+    padding-bottom: 15px;
+}
+
+#entete span:nth-child(2), #entete span:nth-child(3) {
+    font-size: 20px ;    
+}
+
+#navIcon {
+    z-index: 400;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.barre{
+    width: 30px;
+    height: 2px;
+    background: #212B36;
+    border-radius: 3px;
+}
+
+/* Barre du haut */
+.b1{
+    position: relative;
+    top: -6px;
+    transition: all 0.2s;
+}
+
+/* Barre du milieu */
+.b2{ 
+    transition: all 0.2s;
+}
+
+/* Barre du bas */
+.b3{
+    position: relative;
+    top: 6px;
+    transition: all 0.2s;
+}
+
+#menuTexte {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+/* MENU COULISSANT */
+#containerMenu{
+    z-index: 200; /* entre la page d'accueil et le bouton */
+    width: 100%;
+    height: 100%; /* 100% de son parent = accueil : 100vh */
+    background: #212B36; /* rgb(101, 110, 107) */
+    position: absolute;
+    left: -100%; /* disparaît à gauche grâce à -100% */
+    top: 0;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+
+    /* centrer un élément absolute dans son parent */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menuItem {
+    /* centrer chaque onglet du menu */
+    justify-self: center;
+    align-self: center;
+}
+
+.menuItem span {
+    display: inline-block;
+    padding-bottom: 15%;
+}
+
+.item {
+    color:#efefe3;
+    font-size: 45px; 
+    letter-spacing: 1px;
+}
+
+.label {
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: transparent;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+}
+
+.menuItem:hover .label{
+    color: #efefe3;   
+}
+
+
+/* SECTION ACCUEIL */
+.accueil {
+    padding-top: 3%;
+}
+
+.banniere {
+    margin: 0 auto;
+    width: 85%;
+    aspect-ratio: 300 / 100;
+    background-image: url('banniere.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 3%;
+    box-shadow: 0 0 3px #212b3670;
+    border-radius: 12px;
+    position: relative;
+}
+
+#slogan {
+    padding-top: 140px;
+    display: grid;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+h1{
+    font-size: 4vh; /*34px;*/
+    line-height: 120%;
+}
+
+h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5vh;
+    line-height: 90%;
+    padding-top: 8px;
+}
+
+.scroll {
+    position: absolute;
+    font-size: 18px;
+    bottom: -90px;
+    right: 80px;
+}
+
+
+/* SECTION PRÉSENTATION COMPÉTENCES */
+#containerPres {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carte {
+    color: rgb(245, 245, 245);
+    width: 32%;
+    height: 450px;
+    padding-top: 40px;
+    box-shadow: 0 0 3px #212b3670;
+    border-radius: 12px;
+}
+
+.carte:hover {
+    transform: scale(1.04);
+}
+
+.c1 {
+    background-image: url('pic4R.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fond {
+    background: #212B36;
+}
+
+.c2 {
+    background-image: url('pic3R.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.c3 {
+    background-image: url('pic5R.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+h4 {
+    font-size: 3.5vh;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.curseur1, .curseur2, .curseur3 {
+    display: none;
+}
+
+.curseurVu {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    padding: 45px 20px 20px 20px;
+}
+
+
+/* SECTION PROJETS À LA UNE */
+#containerSlide {
+    margin-left: 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide {
+    background-color: #212B36;
+    color: rgb(245, 245, 245);
+    width: 60%;
+    height: 350px;
+    padding-top: 40px;
+    box-shadow: 0 0 3px #212b3670;
+    border-radius: 12px;
+}
+
+
+/* SECTION À PROPOS */
+#containerApropos {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#intro {
+    z-index: 200;
+    position: absolute;
+    top: 45px;
+}
+
+#intro h5 {
+    font-size: 12vh;
+    letter-spacing: -0.2vh;
+}
+
+#intro p{
+    width: 55%;
+    font-size: 3vh;
+    padding-top: 25px;
+}
+
+#portrait {
+    width: 55%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+#portrait img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 3px #212b3670;
+}
+
+/* SECTION FOOTER */
+footer {
+    height: 5%;
+    text-align: center;
+    font-size: 2vh;
+}
+
+
+/* STYLE DE LA PAGE "À VENIR" */
+.containerEye{
+    width: 100%;
+    height: 100%;
+    background: #212B36;
+    position: relative;
+}
+
+.construction {
+    text-align: center;
+    padding-top: 13%;
+}
+
+.construction span {
+    font-size: 2.5vh;
+    color: rgb(245, 245, 245);
+}
+
+.retour {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    text-align: center;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.retour a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
+.eyes {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 40%;
+    text-align: center;
+}
+
+.eye {
+    width: 12%;
+    height: 40%;
+    background: rgb(245, 245, 245);
+    display: inline-block;
+    margin: 40px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+.ball {
+    width: 30%;
+    height: 50%;
+    background: #212B36;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    border-radius: 50%;
+}
+
+
+/* PAGE CONTACT */
+.containerContact {
+    width: 85%;
+    margin: 0 auto;
+    height: 70%;
+}
+
+#texteContact {
+    padding-top: 18%;
+}
+
+#texteContact h1 {
+    font-size: 36px;
+}
+
+#texteContact p {
+    font-size: 22px;
+    width: 50%;
+    padding-top: 30px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact span {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#contact a {
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration-line:underline;
+    color: #212B36;
+    padding-top: 10px;
+}
