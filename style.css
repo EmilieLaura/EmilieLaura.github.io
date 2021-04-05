@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    color: #212B36;
+    color: #212b36;
     font-family: 'Karla', sans-serif;
 }
 
@@ -18,6 +18,7 @@ section {
 
 .bg {
     background-color: rgb(245, 245, 245);
+    height: 100%;
 }
 
 
@@ -261,25 +262,6 @@ h4 {
 }
 
 
-/* SECTION PROJETS À LA UNE */
-#containerSlide {
-    margin-left: 7.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.slide {
-    background-color: #212B36;
-    color: rgb(245, 245, 245);
-    width: 60%;
-    height: 350px;
-    padding-top: 40px;
-    box-shadow: 0 0 3px #212b3670;
-    border-radius: 12px;
-}
-
-
 /* SECTION À PROPOS */
 #containerApropos {
     display: flex;
@@ -321,7 +303,8 @@ h4 {
 
 /* SECTION FOOTER */
 footer {
-    height: 8%;
+    background-color: rgb(245, 245, 245);
+    height: 10%;
     text-align: center;
     font-size: 2vh;
 }
@@ -437,4 +420,123 @@ footer p {
 
 
 /******** RESPONSIVE DESIGN ********/
-@media 
+@media screen and (max-width:1100px) {
+
+    body{
+        height: 100%;
+        background-color: rgb(245, 245, 245);
+    }
+
+    /* NAVIGATION */
+    nav {
+        padding-top: 5%;
+    }
+
+    #entete span:nth-child(1) {
+        font-size: 26px ;
+    }
+
+    #entete span:nth-child(2), #entete span:nth-child(3) {
+        font-size: 22px ;    
+    }
+
+    /* SECTION ACCUEIL */
+    #slogan {
+        padding-top: 10%;
+        padding-right: 8%;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    /* SECTION COMPÉTENCES */
+    #containerPres{
+        flex-direction: column;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .carte {
+        width: 85%;
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    h4{
+        font-size: 7vh;
+    }
+
+    .curseurVu {
+        font-size: 22px;
+        letter-spacing: 0.7px;
+        padding: 80px 60px 60px 60px;
+    }
+
+    /* SECTION À PROPOS */
+    #containerApropos {
+        height: 80vh;
+    }
+
+
+    /* FOOTER */
+    footer {
+        height: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    /* NAVIGATION */
+    nav{
+        padding-top: 7%;
+    }
+
+    /* SECTION ACCUEIL */
+    .banniere {
+        width: 85%;
+        height: 450px;
+        margin-top: 70px;
+    }
+
+    #slogan {
+        padding-top: 50%;
+        padding-right: 8%;
+    }
+
+    /* SECTION COMPÉTENCES */
+    .carte{
+        height: 400px;
+    }
+
+    .curseurVu {
+        font-size: 18px;
+    }
+
+    h4{
+        font-size: 5vh;
+    }
+
+    /* SECTION À PROPOS */
+    #intro p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #intro h5 {
+        font-size: 10vh;
+    }
+
+    #portrait {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer p {
+        font-size: 12px;
+    }
+    
+}
