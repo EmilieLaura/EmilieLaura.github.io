@@ -16,7 +16,7 @@
 
 #slogan {
     position: absolute;
-    bottom: 140px;
+    bottom: 265px;
     left: 19px;
 }
 
@@ -35,6 +35,13 @@ h2{
 .scroll {
     display: none;
 
+}
+
+@media (min-width: 375px) {
+    #slogan {
+        bottom: 225px;
+        left: 26px;
+    }
 }
 
 @media (min-width: 575px) {
@@ -328,12 +335,12 @@ h4 {
 }
 
 .image1{
-    background-image: url('images/copain.png');
+    background-image: url('copain.png');
     position: relative;
 }
 
 .image2{
-    background-image: url('images/archi5.jpg');
+    background-image: url('archi5.jpg');
     position: relative;
 }
 
@@ -543,6 +550,19 @@ h4 {
 .contact_col2 a:hover {
     text-decoration: underline;
     font-weight: 700;
+}
+
+.contact_col2 p:nth-child(2) {
+    padding-left: 35px;
+}
+
+@media (min-width: 375px) {
+    .contact_col2 p:nth-child(1) {
+    padding-left: 25px;
+    }
+    .contact_col2 p:nth-child(2) {
+        padding-left: 68px;
+    }
 }
 
 @media (min-width: 575px) {

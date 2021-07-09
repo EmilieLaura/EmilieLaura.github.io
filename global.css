@@ -209,10 +209,10 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 50%;
+    width: 70%;
 
     /* centrer un élément absolute dans son parent */
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -230,7 +230,7 @@ nav {
 
 .item {
     color:#efefe3;
-    font-size: 45px; 
+    font-size: 33px; 
     letter-spacing: 1px;
 }
 
@@ -250,6 +250,16 @@ nav {
     color: #efefe3;   
 }
 
+@media (min-width: 992px) {
+    .item {
+        font-size: 45px; 
+    }
+    #menu {
+        width: 50%;
+        top: 50%;
+    }
+}
+
 
 /***** SECTION FOOTER *****/
 footer {
@@ -262,10 +272,20 @@ footer {
 
 footer p {
     font-size: 14px;
+    line-height: 19px;
+    padding-top: 10px;
+    max-width: 220px;
+    margin: 0 auto;
 }
 
 footer p:first-child:hover {
     font-weight: 600;
+}
+
+@media (min-width: 575px) {
+    footer p {
+        max-width: 650px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -277,5 +297,6 @@ footer p:first-child:hover {
     footer p {
         padding: 10px 20px;
         font-size: 14px;
+        width: auto;
     }
 }
