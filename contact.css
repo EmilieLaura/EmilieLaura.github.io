@@ -1,0 +1,50 @@
+.contact_contenu {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.contact_text p {
+    font-weight: 200;
+}
+
+.contact_text p:last-child {
+    font-size: 22px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.contact_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_infos {
+    padding-top: 60px;
+}
+
+.contact_infos p {
+    font-size: 24px;
+}
+
+.contact_infos a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+@media (min-width: 575px) {
+    .contact_text {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact_text p:last-child {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact_text p:last-child {
+        width: 50%;
+    } 
+}

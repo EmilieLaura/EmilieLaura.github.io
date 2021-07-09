@@ -1,0 +1,619 @@
+/***** SECTION ACCUEIL *****/
+.accueil {
+    padding-top: 3%;
+}
+
+.banniere {
+    height: 580px;
+    background-image: url('images/ciel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3%;
+    box-shadow: 0 0 3px #212b3670;
+    position: relative;
+}
+
+#slogan {
+    position: absolute;
+    bottom: 140px;
+    left: 19px;
+}
+
+h1{
+    font-size: 4vh;
+    line-height: 130%;
+}
+
+h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5vh;
+    line-height: 105%;
+    padding-top: 8px;
+}
+
+.scroll {
+    display: none;
+
+}
+
+@media (min-width: 575px) {
+    #slogan {
+        bottom: 195px;
+        left: 26px;
+    }
+}
+
+@media (min-width: 768px) {
+    #slogan {
+        bottom: 213px;
+        left: 72px
+    }
+}
+
+@media (min-width: 992px) {
+    .banniere {
+        border-radius: 12px;
+    }
+    #slogan {
+        left: 50px;
+        bottom: 205px;
+    }
+    .scroll {
+        display: initial;
+        position: absolute;
+        font-size: 18px;
+        bottom: -84px;
+        right: 110px;
+    }
+}
+
+
+/***** SECTION PRÉSENTATION COMPÉTENCES *****/
+.presentation {
+    padding: 40px 0px 230px 0px;
+    position: relative;
+}
+
+.presentation_contenu {
+    display: block;
+}
+
+.presentation_intro {
+    width: 100%;
+}
+
+.presentation_intro h3 {
+    margin-left: 29px;
+}
+
+.presentation_intro p {
+    margin-left: 29px;
+    margin-bottom: 20px;
+}
+
+.presentation_intro p:nth-child(4) {
+    margin-bottom: 0px;
+} 
+
+.presentation_expertise {
+    width: 40%;
+    padding-top: 53px;
+}
+
+.presentation_expertise >div {
+    position: relative;
+}
+
+.presentation_scroll {
+    width: 3px;
+    height: 100%;
+    left: 28px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background: #d5dbe0;
+}
+
+.presentation_divScroll {
+    height: 33%;
+    width: 100%;
+    background: #010335;
+    transition: all 0.6s;
+}
+
+.presentation_card {
+    width: 245px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 10px;
+    color: #212B36;
+}
+
+.card_contenu {
+    display: none;
+}
+
+.card_visible {
+    padding-top: 15px;
+    display: block;
+}
+
+.presentation_exergue {
+    max-width: 290px;   
+    position: absolute;
+    bottom: 210px;
+    left: 26px;
+}
+
+.presentation_button {
+    position: relative;
+    height: 160px;
+}
+
+.presentation_button >div {
+    position: absolute;
+    right: 38px;
+    margin-top: 230px;
+}
+
+.presentation_button >div a:hover {
+    color: rgb(245, 245, 245);
+}
+
+@media (min-width: 575px) {
+    .presentation {
+        padding: 55px 0px 230px 0px;
+    }
+    .presentation_intro p {
+        margin-bottom: 0px;
+    }
+    .presentation_intro p:nth-child(3) {
+        margin-left: 79px;
+    }   
+    .presentation_intro p:nth-child(4) {
+        margin-left: 105px;
+    }   
+    .presentation_intro p:nth-child(5) {
+        margin-left: 58px;
+    }
+    .presentation_card {
+        width: 360px;
+        padding-left: 98px;
+    }
+    h4 {
+        font-size: 3vh;
+    }
+    .presentation_scroll {
+        width: 2px;
+        left: 62px;
+    }
+    .presentation_exergue {
+        max-width: 340px;   
+        bottom: 245px;
+        left: 153px;
+    }
+    .presentation_expertise {
+        padding-top: 85px;
+    }
+    .presentation_button >div {
+        right: 350px;
+        margin-top: 215px;
+    }
+}
+
+@media (min-width: 768px) {
+    .presentation {
+        padding: 80px 0px 230px 0px;
+    }
+    .presentation_intro h3, .presentation_intro p:nth-child(2), .presentation_intro p:nth-child(4), .presentation_intro p:nth-child(5) {
+        margin-left: 63px;
+    }
+    .presentation_intro p:nth-child(3) {
+        margin-left: 156px;
+    }
+    .presentation_expertise {
+        margin-left: 97px;
+    }
+    .presentation_exergue {
+        left: 157px;
+    }
+    .presentation_button >div {
+        right: 447px;
+    }
+}
+
+@media (min-width: 992px) {
+    .presentation {
+        padding: 160px 0px 180px 0px;
+    }
+    .presentation_intro {
+        width: 60%;
+        padding: 0px 0px 70px 0px;
+    }
+    .presentation_contenu {
+        display: flex;
+    }
+    .presentation_intro p:nth-child(3) {
+        padding-left: 163px;
+    }
+    .presentation_card {
+        padding-left: 52px;
+    }
+    .presentation_expertise {
+        margin-left: 0px;
+    }
+    .presentation_scroll {
+        left: 24px;
+    }
+    .presentation_exergue {
+        left: 134px;
+    }
+    .presentation_button >div {
+        right: 168px;
+        margin-top: 85px;
+    }
+    .presentation_intro h3, .presentation_intro p:nth-child(2), .presentation_intro p:nth-child(3), .presentation_intro p:nth-child(4), .presentation_intro p:nth-child(5) {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .presentation_scroll {
+        left: 95px;
+    }
+    .presentation_card {
+        padding-left: 130px;
+    }
+    .presentation_button >div {
+        right: 162px;
+    }
+    .presentation_exergue {
+        left: 290px;
+    }
+}
+
+@media(min-width: 1350px) {
+    .presentation_scroll {
+        left: 127px;
+    }
+    .presentation_card {
+        padding-left: 160px;
+    }
+    .presentation_button >div {
+        right: 180px;
+    }
+    .presentation_exergue {
+        left: 305px;
+    }
+}
+
+
+/***** SECTION REALISATIONS *****/
+/* .realisations {
+    background: rgb(231, 231, 231);
+} */
+
+.realisations_col1 h3, .realisations_contenu {
+    padding-left: 29px;
+}
+
+.realisations_col1, .realisations_col2 {
+    width: 100%;
+}
+
+.realisations_col2 {
+    margin-top: 60px;
+}
+
+.realisations_image, .realisations_image {
+    width: 90%;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 500px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 5px rgb(211, 211, 211);
+}
+
+.image1{
+    background-image: url('images/copain.png');
+    position: relative;
+}
+
+.image2{
+    background-image: url('images/archi5.jpg');
+    position: relative;
+}
+
+.realisations_survol {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #212b36;
+    opacity: 0.8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.realisations_survol h5 {
+    color: rgb(245, 245, 245);
+    font-size: 32px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.realisations_survol p {
+    color: rgb(245, 245, 245);
+    font-size: 22px;
+}
+
+.realisations_image2 {
+    background-image: url('pic4R.jpg');
+}
+
+
+.realisations_contenu {
+    padding-bottom: 30px;
+}
+
+.realisations_button {
+    margin-bottom: 120px;
+}
+
+.realisations_button >div {
+    position: absolute;
+    right: 38px;
+    bottom: -108px;
+}
+
+.realisations_button >div a:hover {
+    color: rgb(245, 245, 245);
+}
+
+@media(min-width: 575px) {
+    .realisations_contenu p:first-child {
+        padding-left: 259px;
+    }
+    
+    .realisations_contenu p:nth-child(3) {
+        padding-left: 89px;
+    }
+    .realisations_button >div {
+        right: 350px;
+        bottom: -108px;
+    }
+}
+
+@media (min-width: 768px) {
+    .realisations_button >div {
+        right: 447px;
+    }
+    .realisations_contenu p:nth-child(3) {
+        padding-left: 175px;
+    }
+}
+
+@media (min-width: 992px) {
+    .realisations_col1, .realisations_col2 {
+        width: 50%;
+        padding-bottom: 75px;
+    }
+    .realisations_col2 {
+        margin-top: 150px;
+    }
+    .realisations_col1 h3, .realisations_contenu {
+        padding-left: 0px;
+    }
+    .realisations_image1 {
+        height: 500px;
+    }  
+    .realisations_image1:hover, .realisations_image2:hover {
+        height: 502px;
+        width: 90.5%;
+    }   
+    .realisations_image2 {
+        height: 500px;
+    }   
+    .realisations_contenu p:first-child {
+        padding-left: 199px;
+    }
+    .realisations_contenu p:nth-child(3) {
+        padding-left: 52px;
+    }
+    .realisations_button {
+        margin-bottom: 0px;
+    }
+    .realisations_button >div {
+        right: 175px;
+        bottom: 75px;
+    }
+}
+
+
+/***** SECTION À PROPOS *****/
+.apropos_col1 {
+    width: 90%;
+    padding-left: 29px;
+}
+
+.apropos_col2 {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.apropos_title {
+    padding-bottom: 37px;
+}
+
+.apropos_title p:first-child {
+    padding-left: 99px;
+    padding-bottom: 5px;
+}
+
+.apropos_title p:nth-child(2) {
+    padding-bottom: 0px;
+}
+
+.apropos_col2 >div {
+    height: 300px;
+    background-image: url('Portrait2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.apropos_col1 p {
+    padding-bottom: 40px;
+    margin-right: 25px;
+}
+
+@media (min-width: 575px) {
+    .apropos_col1 p {
+        margin-right: 0px;
+    }
+    .apropos_col2 >div {
+        height: 620px;
+    }
+}
+
+@media (min-width: 992px) {
+    .apropos_col1, .apropos_col2 {
+        width: 50%;
+    }
+    .apropos_col1 {
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+    .apropos_col2 {
+        margin: 0;
+    }
+    .apropos_col1 p {
+        padding-right: 50px;
+        padding-bottom: 0px;
+    }
+    .apropos_title {
+        padding-bottom: 60px;
+    }
+    .apropos_title p:nth-child(2) {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+
+/***** SECTION CONTACT *****/
+.contact {
+    background: rgb(231, 231, 231);
+    padding: 50px 0px;
+}
+
+.contact_col1, .contact_col2 {
+    width: 90%;
+    padding-left: 29px;
+}
+
+.contact_col2 {
+    padding-top: 30px;
+}
+
+.contact_col1 p {
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 200px;
+}
+
+.contact_col2 a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+@media (min-width: 575px) {
+    .contact_col1 p:nth-child(2) {
+        padding-left: 100px;
+    }
+    
+    .contact_col1 p:nth-child(3) {
+        transform: translateY(0px);
+    }
+    
+    .contact_col1 p:nth-child(4) {
+        transform: translate(0px, -9px);
+        padding-left: 163px;
+    }
+    
+    .contact_col2 p:nth-child(1) {
+        transform: translate(0px, 4px);
+        padding-left: 72px;
+    }
+    
+    .contact_col2 p:nth-child(2) {
+        transform: translate(0px, -7px);
+        padding-left: 152px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact_col2 p:nth-child(1) {
+        transform: translate(0px, 4px);
+        padding-left: 75px;
+    }
+    .contact_col2 p:nth-child(2) {
+        transform: translate(0px, -51px);
+        padding-left: 321px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact {
+        padding: 50px 0px 30px 0px;
+    }
+    .contact_col1, .contact_col2 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    .contact_col1 p:nth-child(2) {
+        transform: translateX(157px);
+        padding-left: 0px;
+    }  
+    .contact_col1 p:nth-child(3) {
+        transform: translateY(10px);
+    }   
+    .contact_col1 p:nth-child(4) {
+        transform: translate(234px, -35px);
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+    }   
+    .contact_col2 p:nth-child(1) {
+        transform: translate(65px, 30px);
+        padding-left: 0px;
+    }   
+    .contact_col2 p:nth-child(2) {
+        transform: translate(66px, 23px);
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact_col2 p:nth-child(2) {
+        transform: translate(117px, 23px);
+    }
+}

@@ -14,32 +14,6 @@ const menuT = document.querySelector('#menuTexte');
 /* Constantes animation menu aléatoire */
 const menuItem = document.querySelectorAll('.menuItem');
 
-/* Constantes pour cartes présentation */
-const c1 = document.querySelector('.c1');
-const c2 = document.querySelector('.c2');
-const c3 = document.querySelector('.c3');
-const cursor1 = document.querySelector('.curseur1');
-const cursor2 = document.querySelector('.curseur2');
-const cursor3 = document.querySelector('.curseur3');
-const fond1 = document.querySelector('.c1');
-const fond2 = document.querySelector('.c2');
-const fond3 = document.querySelector('.c3');
-
-/* Variables pour la page "À VENIR" : animation des yeux */ 
-let balls = document.getElementsByClassName('ball');
-
-/***** Animation page "À VENIR" *****/
-document.onmousemove = function() {
-    let x = event.clientX * 100 / window.innerWidth + "%";
-    let y = event.clientY * 100 / window.innerHeight + "%";
-
-    for (let o = 0 ; o < 2 ; o++) {
-        balls[o].style.left = x;
-        balls[o].style.top = y;
-        balls[o].style.transform = "translate(-" + x + ",-" + y + ")";
-    }
-}
-
 
 
 let toggle = 0;
@@ -91,7 +65,6 @@ btnNav.addEventListener('click', () => {
 })
 
 /* TweenMax = une méthode GreenSock // .to = amener un élément quelque part */
-
 
 /***** Animation menu aléatoire *****/
 menuItem.forEach(item => item.addEventListener('mouseenter', (e) =>  {
@@ -166,7 +139,6 @@ menuItem.forEach(item => item.addEventListener('mouseenter', (e) =>  {
 
 }))
 
-
 menuItem.forEach(item => item.addEventListener('click', () => {
 
     toggle --;
@@ -177,37 +149,65 @@ menuItem.forEach(item => item.addEventListener('click', () => {
 }))
 
 
-/***** Survol cartes présentation *****/
-c1.addEventListener('mouseover', function() {
-    cursor1.classList.replace('curseur1', 'curseurVu');
-    fond1.classList.replace('c1', 'fond');
-})
 
-c1.addEventListener('mouseout', function() {
-    cursor1.classList.replace('curseurVu', 'curseur1');
-    fond1.classList.replace('fond', 'c1');
-})
+/***** Animation : apparition au scroll *****/
+const ratio = 0.2;
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: ratio
+};
+const handleIntersect = function(entries, observer){
+    entries.forEach(function(entry){
+        if(entry.intersectionRatio > ratio){
+            entry.target.classList.add('slideInUp');
+            observer.unobserve(entry.target)
+        }
+    });
+};
+var observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('.text-anim').forEach((r) => {
+    observer.observe(r);
+});
 
-c2.addEventListener('mouseover', function() {
-    cursor2.classList.replace('curseur2', 'curseurVu');
-    fond2.classList.replace('c2', 'fond');
-})
 
-c2.addEventListener('mouseout', function() {
-    cursor2.classList.replace('curseurVu', 'curseur2');
-    fond2.classList.replace('fond', 'c2');
-})
 
-c3.addEventListener('mouseover', function() {
-    cursor3.classList.replace('curseur3', 'curseurVu');
-    fond3.classList.replace('c3', 'fond');
-})
+/***** Animation du menu déroulant : section présentation (sur frontpage) *****/
 
-c3.addEventListener('mouseout', function() {
-    cursor3.classList.replace('curseurVu', 'curseur3');
-    fond3.classList.replace('fond', 'c3');
-})
+let elements = document.querySelectorAll('.presentation_card');
+let elementsVisible = document.querySelectorAll('.card_contenu');
+let elementScroll = document.querySelector('.presentation_divScroll');
 
+
+for(let i=0 ; i < elements.length ; i++) {
+    elements[i].addEventListener('mouseover', () => {
+
+        elementsVisible[i].classList.add('card_visible');
+        elementScroll.style.height = (i + 1) * (100/(elements.length)) + '%';
+    });
+
+    elements[i].addEventListener('mouseout', () => {
+        elementsVisible[i].classList.remove('card_visible');
+    });
+}
+
+
+
+/***** Animation survol : section réalisations (sur frontpage) *****/
+
+let realisations = document.querySelectorAll('.realisations_image');
+let realisationSurvol = document.querySelectorAll('.realisations_survol');
+
+for(let i=0 ; i < realisations.length ; i++) {
+    realisations[i].addEventListener('mouseover', () => {
+
+        realisationSurvol[i].style.display = 'initial';
+    });
+
+    realisations[i].addEventListener('mouseout', () => {
+        realisationSurvol[i].style.display = 'none';
+    });
+}
 
 
 

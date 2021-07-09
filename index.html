@@ -5,14 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Émilie-Laura Accipe</title>
-        <link rel="stylesheet" href="style.css">
 
+        <!-- Lien CSS -->
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="frontpage.css">
+
+        <!-- Bootstrap CSS -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        
         <!-- Lien Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -22,8 +30,6 @@
             <nav>
                 <div id="entete">
                     <span>Émilie-Laura Accipe</span>
-                    <span>DESIGN GRAPHIQUE</span>
-                    <span>& DÉVELOPPEMENT WEB</span>
                 </div>
     
                 <div id="navIcon">
@@ -35,7 +41,7 @@
                     </div>
             
                     <div id="menuTexte">
-                        <h3>MENU</h3>
+                        <p>MENU</p>
                     </div>
             
                 </div>   
@@ -72,73 +78,158 @@
         </div>
 
         <!-- SECTION ACCUEIL -->
-        <section class="bg accueil">
-            <div class="banniere">
+        <section class="accueil">
+            <div class="bloc banniere">
                 <div id="slogan">
                     <h1>Designer graphique, <br> développeuse web <br> créative et passionnée</h1>
-                    <h2>au service de projets <br> engagés et vertueux</h2>
+                    <h2>au service de projets engagés et vertueux</h2>
                 </div>
     
-                <div class="scroll">
+                <div class="scroll text-anim">
                     <span>scroll |</span>
                 </div>
-            </div>
-            
+            </div>          
         </section>
 
         <!-- SECTION PRÉSENTATION COMPÉTENCES -->
-        <section class="bg">
+        <section class="presentation">
 
-            <div id="containerPres">
-
-                <div class="carte c1">
-                    <h4>IDENTITÉ GRAPHIQUE</h4>
-                    <div class="curseur1">
-                        <p>Véritable ancrage visuel de votre entreprise auprès du public, je crée à vos côtés une identité qui a du sens, qui valorise vos valeurs, vos ambitions et vos produits.</p>
+            <div class="bloc presentation_contenu text-anim">
+                <div class="presentation_intro">
+                    <h3>mon expertise</h3>
+                    <p class="title">créer la <span class="title_bold">rencontre</span></p>
+                    <p class="title">donner de la <span class="title_bold">visibilité</span></p>
+                    <p class="title">éveiller les <span class="title_bold">sens</span></p>
+                    <p class="title">et les <span class="title_bold">curiosités</span>...</p>
+                </div>
+    
+                <div class="presentation_expertise text-anim">
+                    <div>
+                        <div class="presentation_scroll">
+                            <div class="presentation_divScroll"></div>
+                        </div>
+    
+                        <div class="presentation_card">
+                            <h4>Identité graphique</h4>
+                            <p class="card_contenu">Véritable ancrage visuel de votre entreprise auprès du public, je crée à vos côtés une identité qui a du sens, qui valorise vos valeurs, vos ambitions et vos produits.</p>
+                        </div>
+        
+                        <div class="presentation_card">
+                            <h4>Développement web</h4>
+                            <p class="card_contenu">Je vous accompagne également pour la conception et la réalisation de vos supports digitaux, qu'il s'agisse d'un site vitrine, d'un site e-commerce, d'un blog, d'un application mobile...</p>
+                        </div>
+        
+                        <div class="presentation_card">
+                            <h4>Mise en page</h4>
+                            <p class="card_contenu">Je conçois vos différents supports imprimés (affiche, flyer, catalogue, plaquette, packaging...), toujours en parfait accord avec votre identité graphique.<br><br></p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="carte c2">
-                    <h4>DÉVELOPPEMENT WEB</h4>
-                    <div class="curseur2">
-                        <p>Je vous accompagne également pour la conception et la réalisation de vos supports digitaux, qu'il s'agisse d'un site vitrine, d'un site e-commerce, d'un blog, d'un application mobile...</p>
-                    </div>
-                </div>
-                <div class="carte c3">
-                    <h4>MISE EN PAGE</h4>
-                    <div class="curseur3">
-                        <p>Je conçois vos différents supports imprimés (affiche, flyer, catalogue, plaquette, packaging...), toujours en parfait accord avec votre identité graphique.<br><br></p>
-                        <p>Le sens, la cohérence et l'harmonie de tous vos supports sont les trois clefs d'une identité réussie.</p>
-                    </div>
-                </div>
+                
             </div>
 
+            <div class="bloc button presentation_button text-anim">               
+                <div><a href="page.html">En savoir plus</a></div>
+            </div>
+
+            <div class="bloc presentation_exergue">
+                <p>Le sens, la cohérence et l'harmonie de tous vos supports sont les trois clefs d'une identité réussie.</p>
+            </div>
         </section>
 
-        <!-- SECTION À PROPOS -->
-        <section class="bg">
-            
-            <div id="containerApropos">
-                <div id="intro">
-                    <h5>Hey ! Je suis <br>Émilie-Laura Accipe</h5>
+        <!-- SECTION RÉALISATIONS -->
+        <section class="realisations">
+
+            <div class="bloc">
+                <div class="realisations_col1 text-anim">
+                    <h3>mes réalisations</h3>
+
+                    <div class="realisations_contenu">
+                        <p class="title">Valoriser</p>
+                        <p class="title">le caractère <span class="title_bold">unique</span></p>
+                        <p class="title">de chaque <span class="title_bold">projet</span></p>
+                    </div>
+
+                    <div class="realisations_image image1">
+                        <a href="page.html">
+                            <div class="realisations_survol">
+                                <h5>bière copain</h5>
+                                <p>identité visuelle</p>
+                                <p>packaging, goodies</p>
+                                <p>site internet</p>
+                                <p>2021</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="realisations_col2  text-anim">                  
+                    <div class="realisations_image image2">
+                        <a href="page.html">
+                            <div class="realisations_survol">
+                                <h5>archi5</h5>
+                                <p>illustrations</p>
+                                <p>2020</p>
+                            </div>
+                        </a>
+                    </div>
+
                     
-                    <p>designer graphique et développeuse web, passionnée par le dessin et les images. J'aime aussi écrire du beau code et finaliser des projets web au pixel près. Mon objectif est de vous faire gagner en crédibilité et en notoriété en sublimant les supports de communication de votre entreprise.<br>Vous aimez mon travail et souhaitez discuter de vos idées ? Écrivez-moi sans tarder.</p>
+                    <div class="bloc button realisations_button">
+                        <div><a href="page.html">En savoir plus</a></div>
+                    </div>
 
                 </div>
-
-                <div id="portrait">
-                        <img src="Portrait2.jpg" alt="portrait">
-                </div>
-
             </div>
 
         </section>
 
+        
+        <!-- SECTION À PROPOS -->
+        <section class="apropos">
+            <div class="bloc">
+                <div class="apropos_col1 text-anim">
+                    <h3>à propos</h3>
+                    
+                    <div class="apropos_title">
+                        <p class="title">Hey, je suis</p>
+                        <p class="title"><span class="title_bold">Émilie-Laura</span></p>
+                    </div>
+                    
+                    <p>Designer graphique et Développeuse web, passionnée par le dessin et les images. J'aime aussi écrire du beau code et finaliser des projets web au pixel près. Mon objectif est de vous faire gagner en crédibilité et en notoriété en sublimant les supports de communication de votre entreprise.
+                        Vous aimez mon travail et souhaitez discuter de vos idées ? Écrivez-moi sans tarder.</p>
+                    </div>
+                    
+                    <div class="apropos_col2 text-anim">
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+
+            
+        <!-- SECTION CONTACT -->
+        <section class="contact">
+            <div class="bloc">
+                <div class="contact_col1 text-anim">
+                    <h3>contact</h3>
+                    <p class="title">Une envie ?</p>
+                    <p class="title">Une idée ?</p>
+                    <p class="title">Un projet ?</p>
+                </div>
+
+                <div class="contact_col2 text-anim">
+                    <p class="title">Laissez-moi</p>
+                    <p class="title">un <span class="title_bold"><a href="contact.html">message.</a></span></p>
+                </div>
+            </div>
+        </section>
+           
+            
         <!-- FOOTER -->
         <footer>
-            <p>
-                Copyright 2021, tous droits réservés. Ce site a été conçu et codé par Émilie-Laura Accipe.
-            </p>
+            <p><a href="#">mentions légales</a></p>
+            <p>Ce site a été conçu et codé par Émilie-Laura Accipe.</p>
+            <p>Copyright 2021, tous droits réservés. </p>
         </footer>
 
 
@@ -152,6 +243,18 @@
 
         <!-- Lien perso JS -->
         <script src="script.js"> </script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 
     </body>
 </html>
