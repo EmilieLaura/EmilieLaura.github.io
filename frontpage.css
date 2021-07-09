@@ -5,7 +5,7 @@
 
 .banniere {
     height: 580px;
-    background-image: url('images/ciel.jpg');
+    background-image: url('ciel.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
