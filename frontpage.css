@@ -282,7 +282,7 @@ h4 {
         padding-left: 130px;
     }
     .presentation_button >div {
-        right: 162px;
+        right: 171px;
     }
     .presentation_exergue {
         left: 290px;
@@ -301,6 +301,33 @@ h4 {
     }
     .presentation_exergue {
         left: 305px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .presentation_scroll {
+        left: 132px;
+    }
+    .presentation_button >div {
+        right: 225px;
+    }
+}
+
+@media(min-width: 1700px) {
+    .presentation_scroll {
+        left: 150px;
+    }
+    .presentation_button >div {
+        right: 278px;
+    }
+}
+
+@media(min-width: 1800px) {
+    .presentation_scroll {
+        left: 180px;
+    }
+    .presentation_button >div {
+        right: 300px;
     }
 }
 
