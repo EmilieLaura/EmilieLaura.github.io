@@ -5,12 +5,12 @@
 
 .banniere {
     height: 580px;
-    background-image: url('ciel.jpg');
+    background-image: url('webdesign_cover2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 3%;
-    box-shadow: 0 0 3px #212b3670;
+    box-shadow: 0 0 4px #bbbbbb70;
     position: relative;
 }
 
@@ -18,6 +18,18 @@
     position: absolute;
     bottom: 265px;
     left: 19px;
+    z-index: 1;
+    max-width: 280px;
+}
+
+.slogan_back {
+    background: rgb(245, 245, 245);
+    opacity: 0.6;
+    position: absolute;
+    bottom: 236px;
+    left: 0px;
+    height: 200px;
+    width: 520px;
 }
 
 h1{
@@ -39,22 +51,54 @@ h2{
 
 @media (min-width: 375px) {
     #slogan {
-        bottom: 225px;
+        bottom: 170px;
         left: 26px;
+    }
+    .slogan_back {
+        bottom: 140px;
+        left: 0px;
+        height: 245px;
+    }
+}
+
+@media (min-width: 414px) {
+    #slogan {
+        bottom: 195px;
+        left: 26px;
+    }
+    .slogan_back {
+        bottom: 180px;
+        left: 19px;
+        height: 270px;
     }
 }
 
 @media (min-width: 575px) {
     #slogan {
         bottom: 195px;
-        left: 26px;
+        left: 45px;
+        max-width: 355px;
+    }
+    .slogan_back {
+        bottom: 160px;
+        left: 19px;
+        height: 240px;
+        width: 410px;
     }
 }
 
 @media (min-width: 768px) {
     #slogan {
-        bottom: 213px;
-        left: 72px
+        bottom: 158px;
+        left: 72px;
+        max-width: 345px;
+    }
+    .slogan_back {
+        bottom: 145px;
+        left: 19px;
+        width: 413px;
+        height: 260px;
+        /* height: 330px; */
     }
 }
 
@@ -64,7 +108,13 @@ h2{
     }
     #slogan {
         left: 50px;
-        bottom: 205px;
+        bottom: 159px;
+    }
+    .slogan_back {
+        bottom: 145px;
+        left: 19px;
+        width: 413px;
+        height: 260px;
     }
     .scroll {
         display: initial;
@@ -72,6 +122,62 @@ h2{
         font-size: 18px;
         bottom: -84px;
         right: 110px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #slogan {
+        max-width: 365px;
+        bottom: 165px;
+    }
+    .slogan_back {
+        width: 401px;
+        bottom: 122px;
+    }
+}
+
+@media (min-width: 1350px) {
+    #slogan {
+        bottom: 170px;
+    }
+    .slogan_back {
+        width: 425px;
+    }
+}
+
+@media (min-width: 1500px) {
+    #slogan {
+        max-width: 400px;
+    }
+    .slogan_back {
+        width: 460px;
+    }
+}
+
+@media (min-width: 1700px) {
+    #slogan {
+        max-width: 455px;
+    }
+    .slogan_back {
+        width: 520px;
+    }
+}
+
+@media (min-width: 1800px) {
+    #slogan {
+        max-width: 485px;
+    }
+    .slogan_back {
+        width: 545px;
+    }
+}
+
+@media (min-width: 2000px) {
+    #slogan {
+        max-width: 550px;
+    }
+    .slogan_back {
+        width: 610px;
     }
 }
 
@@ -362,12 +468,12 @@ h4 {
 }
 
 .image1{
-    background-image: url('copain.png');
+    background-image: url('Cover_site_Copain.jpg');
     position: relative;
 }
 
 .image2{
-    background-image: url('archi5.jpg');
+    background-image: url('image_archi5.jpg');
     position: relative;
 }
 
