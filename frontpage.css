@@ -68,7 +68,6 @@ h2{
     }
     .slogan_back {
         bottom: 180px;
-        left: 19px;
         height: 270px;
     }
 }
@@ -81,9 +80,7 @@ h2{
     }
     .slogan_back {
         bottom: 160px;
-        left: 19px;
         height: 240px;
-        width: 410px;
     }
 }
 
@@ -98,7 +95,6 @@ h2{
         left: 19px;
         width: 413px;
         height: 260px;
-        /* height: 330px; */
     }
 }
 
