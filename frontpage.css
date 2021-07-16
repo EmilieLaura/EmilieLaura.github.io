@@ -455,7 +455,7 @@ h4 {
     margin-top: 60px;
 }
 
-.realisations_image, .realisations_image {
+.realisations_desktop, .realisations_mobile {
     width: 90%;
     cursor: pointer;
     border-radius: 8px;
@@ -467,6 +467,10 @@ h4 {
     box-shadow: 0px 0px 5px rgb(211, 211, 211);
 }
 
+.realisations_desktop {
+    display: none;
+}
+
 .image1{
     background-image: url('Cover_site_Copain.jpg');
     position: relative;
@@ -475,6 +479,18 @@ h4 {
 .image2{
     background-image: url('image_archi5.jpg');
     position: relative;
+}
+
+.realisations_fixe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #212b36;
+    opacity: 0.8;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .realisations_survol {
@@ -490,7 +506,7 @@ h4 {
     text-align: center;
 }
 
-.realisations_survol h5 {
+.realisations_survol h5, .realisations_fixe h5 {
     color: rgb(245, 245, 245);
     font-size: 32px;
     padding-top: 120px;
@@ -498,7 +514,7 @@ h4 {
     text-transform: uppercase;
 }
 
-.realisations_survol p {
+.realisations_survol p, .realisations_fixe p {
     color: rgb(245, 245, 245);
     font-size: 22px;
 }
@@ -506,7 +522,6 @@ h4 {
 .realisations_image2 {
     background-image: url('pic4R.jpg');
 }
-
 
 .realisations_contenu {
     padding-bottom: 30px;
@@ -559,6 +574,12 @@ h4 {
     }
     .realisations_col1 h3, .realisations_contenu {
         padding-left: 0px;
+    }
+    .realisations_desktop {
+        display: flex;
+    }
+    .realisations_mobile {
+        display: none;
     }
     .realisations_image1 {
         height: 500px;
@@ -661,13 +682,14 @@ h4 {
 
 /***** SECTION CONTACT *****/
 .contact {
-    background: rgb(231, 231, 231);
+    background: #212b36;
     padding: 50px 0px;
 }
 
 .contact_col1, .contact_col2 {
     width: 90%;
     padding-left: 29px;
+    color: rgb(231, 231, 231);
 }
 
 .contact_col2 {
@@ -680,9 +702,14 @@ h4 {
     max-width: 200px;
 }
 
+.contact_col2 a {
+    color: rgb(231, 231, 231);
+}
+
 .contact_col2 a:hover {
     text-decoration: underline;
     font-weight: 700;
+    color: rgb(231, 231, 231);
 }
 
 .contact_col2 p:nth-child(2) {

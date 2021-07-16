@@ -195,7 +195,7 @@ for(let i=0 ; i < elements.length ; i++) {
 
 /***** Animation survol : section réalisations (sur frontpage) *****/
 
-let realisations = document.querySelectorAll('.realisations_image');
+let realisations = document.querySelectorAll('.realisations_desktop');
 let realisationSurvol = document.querySelectorAll('.realisations_survol');
 
 for(let i=0 ; i < realisations.length ; i++) {
