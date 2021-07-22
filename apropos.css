@@ -90,6 +90,11 @@
     padding-bottom: 170px;
 }
 
+.client .entete {
+    width: 85%;
+    margin: 0 auto;
+}
+
 .client .bloc {
     padding-top: 40px;
     width: 85%;
