@@ -435,10 +435,6 @@ h4 {
 
 
 /***** SECTION REALISATIONS *****/
-/* .realisations {
-    background: rgb(231, 231, 231);
-} */
-
 .realisations_col1 h3, .realisations_contenu {
     padding-left: 29px;
 }
@@ -468,7 +464,7 @@ h4 {
 }
 
 .image1{
-    background-image: url('Cover_site_Copain.jpg');
+    background-image: url('Cover_site_Copain2.jpg');
     position: relative;
 }
 
@@ -500,14 +496,6 @@ h4 {
     opacity: 0.8;
     border-radius: 8px;
     text-align: center;
-}
-
-.realisations_survol h5, .realisations_fixe h5 {
-    color: rgb(245, 245, 245);
-    font-size: 32px;
-    padding-top: 120px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
 }
 
 .realisations_survol p, .realisations_fixe p {
@@ -675,121 +663,3 @@ h4 {
     }
 }
 
-
-/***** SECTION CONTACT *****/
-.contact {
-    background: #212b36;
-    padding: 50px 0px;
-}
-
-.contact_col1, .contact_col2 {
-    width: 90%;
-    padding-left: 29px;
-    color: rgb(231, 231, 231);
-}
-
-.contact_col2 {
-    padding-top: 30px;
-}
-
-.contact_col1 p {
-    font-size: 40px;
-    line-height: 45px;
-    max-width: 200px;
-}
-
-.contact_col2 a {
-    color: rgb(231, 231, 231);
-}
-
-.contact_col2 a:hover {
-    text-decoration: underline;
-    font-weight: 700;
-    color: rgb(231, 231, 231);
-}
-
-.contact_col2 p:nth-child(2) {
-    padding-left: 35px;
-}
-
-@media (min-width: 375px) {
-    .contact_col2 p:nth-child(1) {
-    padding-left: 25px;
-    }
-    .contact_col2 p:nth-child(2) {
-        padding-left: 68px;
-    }
-}
-
-@media (min-width: 575px) {
-    .contact_col1 p:nth-child(2) {
-        padding-left: 100px;
-    }
-    
-    .contact_col1 p:nth-child(3) {
-        transform: translateY(0px);
-    }
-    
-    .contact_col1 p:nth-child(4) {
-        transform: translate(0px, -9px);
-        padding-left: 163px;
-    }
-    
-    .contact_col2 p:nth-child(1) {
-        transform: translate(0px, 4px);
-        padding-left: 72px;
-    }
-    
-    .contact_col2 p:nth-child(2) {
-        transform: translate(0px, -7px);
-        padding-left: 152px;
-    }
-}
-
-@media (min-width: 768px) {
-    .contact_col2 p:nth-child(1) {
-        transform: translate(0px, 4px);
-        padding-left: 75px;
-    }
-    .contact_col2 p:nth-child(2) {
-        transform: translate(0px, -51px);
-        padding-left: 321px;
-    }
-}
-
-@media (min-width: 992px) {
-    .contact {
-        padding: 50px 0px 30px 0px;
-    }
-    .contact_col1, .contact_col2 {
-        width: 50%;
-        padding-left: 0px;
-    }
-    .contact_col1 p:nth-child(2) {
-        transform: translateX(157px);
-        padding-left: 0px;
-    }  
-    .contact_col1 p:nth-child(3) {
-        transform: translateY(10px);
-    }   
-    .contact_col1 p:nth-child(4) {
-        transform: translate(234px, -35px);
-        padding-top: 20px;
-        padding-bottom: 30px;
-        padding-left: 0px;
-    }   
-    .contact_col2 p:nth-child(1) {
-        transform: translate(65px, 30px);
-        padding-left: 0px;
-    }   
-    .contact_col2 p:nth-child(2) {
-        transform: translate(66px, 23px);
-        padding-left: 0px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .contact_col2 p:nth-child(2) {
-        transform: translate(117px, 23px);
-    }
-}

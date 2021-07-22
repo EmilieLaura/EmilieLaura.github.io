@@ -13,6 +13,11 @@ section {
     padding: 80px 0px;
 }
 
+.entete {
+    width: 85%;
+    margin: 0 auto;
+}
+
 .bloc {
     display: block;
     width: 100%;
@@ -24,6 +29,14 @@ h3 {
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 1.5px;
     padding-bottom: 35px;
+}
+
+h5 {
+    color: rgb(245, 245, 245);
+    font-size: 32px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 a {
@@ -141,9 +154,9 @@ nav {
     padding-top: 5%;
 }
 
-#entete span {
+#entete a {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
+    font-size: 16px;
     padding-bottom: 15px;
 }
 
@@ -161,6 +174,12 @@ nav {
     height: 2px;
     background: #212B36;
     border-radius: 3px;
+}
+
+@media (min-width: 575px) {
+    #entete a {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -228,6 +247,10 @@ nav {
     padding-bottom: 15%;
 }
 
+.menuItem .item3 {
+    padding-bottom: 5%;
+}
+
 .item {
     color:#efefe3;
     font-size: 33px; 
@@ -257,6 +280,130 @@ nav {
     #menu {
         width: 50%;
         top: 50%;
+    }
+}
+
+
+
+/***** SECTION CONTACT *****/
+.contact .bloc {
+    width: 85%;
+}
+
+.contact {
+    background: #212b36;
+    padding: 50px 0px;
+}
+
+.contact_col1, .contact_col2 {
+    width: 90%;
+    color: rgb(231, 231, 231);
+    padding-left: 25px;
+}
+
+.contact_col2 {
+    padding-top: 30px;
+}
+
+.contact_col1 p {
+    font-size: 40px;
+    line-height: 45px;
+    max-width: 200px;
+}
+
+.contact_col2 a {
+    color: rgb(231, 231, 231);
+}
+
+.contact_col2 a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: rgb(231, 231, 231);
+}
+
+.contact_col2 p:nth-child(2) {
+    padding-left: 35px;
+}
+
+@media (min-width: 375px) {
+    .contact_col2 p:nth-child(1) {
+    padding-left: 25px;
+    }
+    .contact_col2 p:nth-child(2) {
+        padding-left: 68px;
+    }
+}
+
+@media (min-width: 575px) {
+    .contact_col1 p:nth-child(2) {
+        padding-left: 100px;
+    }
+    
+    .contact_col1 p:nth-child(3) {
+        transform: translateY(0px);
+    }
+    
+    .contact_col1 p:nth-child(4) {
+        transform: translate(0px, -9px);
+        padding-left: 163px;
+    }
+    
+    .contact_col2 p:nth-child(1) {
+        transform: translate(0px, 4px);
+        padding-left: 72px;
+    }
+    
+    .contact_col2 p:nth-child(2) {
+        transform: translate(0px, -7px);
+        padding-left: 152px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact_col2 p:nth-child(1) {
+        transform: translate(0px, 4px);
+        padding-left: 75px;
+    }
+    .contact_col2 p:nth-child(2) {
+        transform: translate(0px, -51px);
+        padding-left: 321px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact {
+        padding: 50px 0px 30px 0px;
+    }
+    .contact_col1, .contact_col2 {
+        width: 50%;
+        padding-left: 0px;
+    }
+    .contact_col1 p:nth-child(2) {
+        transform: translateX(157px);
+        padding-left: 0px;
+    }  
+    .contact_col1 p:nth-child(3) {
+        transform: translateY(10px);
+    }   
+    .contact_col1 p:nth-child(4) {
+        transform: translate(234px, -35px);
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+    }   
+    .contact_col2 p:nth-child(1) {
+        transform: translate(65px, 30px);
+        padding-left: 0px;
+    }   
+    .contact_col2 p:nth-child(2) {
+        transform: translate(66px, 23px);
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact_col2 p:nth-child(2) {
+        transform: translate(117px, 23px);
     }
 }
 
@@ -300,3 +447,28 @@ footer p:first-child:hover {
         width: auto;
     }
 }
+
+
+
+/***** PAGES AU FOND BLEU *****/
+.fond_blue, .fond_blue footer {
+    background: #212b36;
+    color: rgb(245, 245, 245);
+}
+
+.fond_blue a {
+    color: rgb(245, 245, 245);
+}
+
+.fond_blue .barre {
+    background: rgb(245, 245, 245);
+}
+
+.fond_blue .contact {
+    background: rgb(245, 245, 245);
+}
+
+.fond_blue .contact_col1, .fond_blue .contact_col2, .fond_blue .contact a  {
+    color: #212b36;
+}
+

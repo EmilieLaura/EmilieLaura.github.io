@@ -1,0 +1,113 @@
+.expertise {
+    padding-bottom: 70px;
+}
+
+.expertise .bloc {
+    display: block;
+    padding-top: 70px;
+}
+
+.expertise .bloc:last-child {
+    padding-top: 0;
+}
+
+.expertise_col {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.expertise_col >div {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    position: relative;
+}
+
+.expertise .image1 {
+    background-image: url('expertise_siteweb3.jpg');
+}
+
+.expertise .image2 {
+    background-image: url('expertise_uxui.jpg');
+}
+
+.expertise .image3 {
+    background-image: url('expertise_referencement.jpg');
+}
+
+.expertise .image4 {
+    background-image: url('expertise_identite.jpg');
+}
+
+.expertise .image5 {
+    background-image: url('expertise_edition.jpg');
+}
+
+.expertise .image6 {
+    background-image: url('image_archi5.jpg');
+}
+
+.expertise_fond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #212b36;
+    opacity: 0.8;
+    border-radius: 8px;
+    text-align: center;
+    transition: all ease-in 0.5s;
+}
+
+.expertise_fond:hover {
+    background: #212b36;
+    opacity: 0.3;
+}
+
+.expertise_col h5 {
+    color: rgb(245, 245, 245);
+    text-transform: uppercase;
+    padding-top: 120px;
+}
+
+@media (min-width: 575px) {
+    .expertise_col {
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) {
+    .expertise_col {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .expertise {
+        padding-bottom: 260px;
+    }
+
+    .expertise .bloc {
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .expertise .bloc:last-child {
+        padding-top: 70px;
+    }
+
+    .expertise_col {
+        width: 30%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .expertise_entete p:last-child {
+        padding-left: 127px;
+    }
+}
