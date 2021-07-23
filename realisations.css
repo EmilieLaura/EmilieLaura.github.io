@@ -1,0 +1,183 @@
+.realisations .bloc {
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.realisations_col {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    /* padding-bottom: 70px; */
+}
+
+.realisations .bloc >div:last-child {
+    margin-top: 180px;
+}
+
+.realisations_col >div {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 130px;
+    position: relative;
+}
+
+.realisations_fond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #212b36;
+    opacity: 0;
+    border-radius: 8px;
+    text-align: center;
+    transition: all ease-in 0.3s;
+    padding-top: 160px;
+}
+
+.realisations_fond p {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.realisations_fond:hover {
+    background: #212b36;
+    opacity: 0.88;
+}
+
+.realisations_title p {
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.realisations .image1 {
+    background-image: url('Cover_site_Copain2.jpg');
+    position: relative;
+}
+
+.image1 .realisations_title {
+    position: absolute;
+    bottom: -75px;
+    right: 50px;
+    max-width: 120px;
+}
+
+.realisations .image2 {
+    background-image: url('image_archi5.jpg');
+    position: relative;
+}
+
+.image2 .realisations_title {
+    position: absolute;
+    bottom: -30px;
+    left: 25px;
+    max-width: 260px;
+}
+
+.realisations .image3 {
+    background-image: url('salonvolant.jpeg');
+}
+
+.image3 .realisations_title {
+    position: absolute;
+    top: -78px;
+    right: 50px;
+    max-width: 120px;
+}
+
+.realisations .image4 {
+    background-image: url('Couv_alexandrapaul.jpg');
+}
+
+.image4 .realisations_title {
+    position: absolute;
+    top: -79px;
+    left: 25px;
+    max-width: 120px;
+}
+
+@media (min-width: 768px) {
+    .realisations_title p {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .image1 .realisations_title {
+        bottom: -89px;
+        right: 90px;
+    }
+
+    .image2 .realisations_title {
+        left: 50px;
+    }
+
+    .image3 .realisations_title {
+        top: -95px;
+        right: 100px;
+    }
+
+    .image4 .realisations_title {
+        top: -94px;
+        left: 50px;
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .realisations_col {
+        display: block;
+        width: 46%;
+        /* padding-bottom: 70px; */
+    }
+
+    .realisations_col >div {
+        height: 400px;
+        margin-bottom: 250px;
+    }
+
+    .realisations_title p {
+        font-size: 60px;
+    }
+
+    .image1 .realisations_title {
+        bottom: -88px;
+        right: 75px;
+        max-width: 200px;
+    }
+
+    .image3 .realisations_title {
+        top: -98px;
+        right: 50px;
+        max-width: 260px;
+    }
+
+    .image4 .realisations_title {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .realisations_title p {
+        font-size: 72px;
+    }
+
+    .realisations_col >div {
+        height: 500px;
+    }
+
+    .image4 .realisations_title {
+        top: -97px;
+    }
+}
+
+@media (min-width: 1350px) {
+    .realisations_col >div {
+        height: 550px;
+    }
+}
